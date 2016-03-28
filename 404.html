@@ -1,1 +1,22 @@
-index.html
+<html>
+<head>
+  <title>GitHub Pages - Virtual Path Routing?</title>
+</head>
+<body>
+
+<dl>
+  <dt>Current browser path</dt>
+  <dd id="browser-path">Loading&hellip;</dd>
+</dl>
+
+<script>
+'use strict'
+
+window.onload = () => {
+  const node = document.getElementById( 'browser-path' );
+
+  node.innerHTML = document.location.toString();
+}
+</script>
+</body>
+</html>
